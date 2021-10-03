@@ -32,7 +32,7 @@ Two essential questions about the direction forward were posed at the beginning 
 2. **Are there enough qualified, retirement-ready employees in the departmentss to mentor the next gen of PH employees?**: Note the comparison between retiring employees by title and current employees by title below.
 
 ![mentor pivot](https://github.com/temersonzetina/Pewlett-Hackard-Analysis/blob/main/Data/retiree_count_by_title.png)
-![current employees by title](https://github.com/temersonzetina/Pewlett-Hackard-Analysis/blob/main/Data/current_employees_by_title.png)	
+![current employees by title](https://github.com/temersonzetina/Pewlett-Hackard-Analysis/blob/main/Data/current_employees_by_title_FINAL.png)
 
 As you can see, there is a significant disparity between total current employees (most of whom will not be retiring) and eligible mentors. In all likelihood, there will not be enough qualified, retirement-ready employees (especially in the larger departments) to mentor the next generation of employees. Executive staff may want to look into external opportunities (i.e. through externships) as a means for creating the abundance of mentoring relationships that the company may need in the coming years.
 
