@@ -18,6 +18,7 @@ Below is a set of 4 key findings from the analysis described above.
 
 	- There are about 1500 employees eligible to be mentors
 	- A majority (about 730) are either senior staff or senior engineers
+
 ![mentor pivot](https://github.com/temersonzetina/Pewlett-Hackard-Analysis/blob/main/Data/retiree_count_by_title.png)
 
 4. **Targeting mentors strategically**: In terms of who to target as potential mentors, executive staff may want to consider employee hire date as a variable of interest. This would enable them to focus on staff that have been on board during key moments in the company's history. If executives would prefer for mentored staff to benefit from maximum institutional knowledge, then it would be appropriate to target onboarding date ranges that reach as far back as possible. Conversely, if there are past events or processes that the company would prefer to leave behind, they may target retiring employees whose onboarding date is more recent. *It's important to acknowledge that some of these employees may have been with the company prior, but underwent a title change more recently.*
