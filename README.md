@@ -12,28 +12,28 @@ In addition to the code provided in SQL, the deliverables included the following
 ### Results
 Below is a set of 4 key findings from the analysis described above.
 
-1. Prioritizing senior engineers and staff: A significant number of senior engineers are predicted to retire soon. This presents a serious threat to a company as dependent on its engineering workforce as PH. Therefore, the most pressing need in terms of recruitment of new employees may be engineering talent.
-2. Senior staff exodus: Relatedly, a wave of retirements from senior staff in general (including those with the title of senior staff and senior engineers) will create a large dropoff in institutional knowledge and company-specific expertise across functional areas and departments. This broadens the first point, made above.
-3. Observing potential mentors: There are about 1500 employees eligible to be mentors.
+1. **Prioritizing senior engineers and staff:** A significant number of senior engineers are predicted to retire soon. This presents a serious threat to a company as dependent on its engineering workforce as PH. Therefore, the most pressing need in terms of recruitment of new employees may be engineering talent.
+2. **Senior staff exodus**: Relatedly, a wave of retirements from senior staff in general (including those with the title of senior staff and senior engineers) will create a large dropoff in institutional knowledge and company-specific expertise across functional areas and departments. This broadens the first point, made above.
+3. **Observing potential mentors**: There are about 1500 employees eligible to be mentors.
 With the help of an Excel pivot table, I was able to discern the two bullet points below. These findings mean that there may be ample employees to select from in identifying mentors for priority positions.
 
 	- There are about 1500 employees eligible to be mentors
 	- A majority (about 730) are either senior staff or senior engineers
 	- IMAGE OF PIVOT OUTPUT - retiree_count_by_title
 
-4. Targeting mentors strategically: In terms of who to target as potential mentors, executive staff may want to consider employee hire date as a variable of interest. This would enable them to focus on staff that have been on board during key moments in the company's history. If executives would prefer for mentored staff to benefit from certain institutional knowledge, then it would be appropriate to target onboarding date ranges that reach as far back as possible. Conversely, if there are past events or processes that the company would prefer to leave behind, they may target retiring employees whose onboarding date is more recent. *It's important to acknowledge that some of these employees may have been with the company prior, but underwent a title change more recently.*
+4. **Targeting mentors strategically**: In terms of who to target as potential mentors, executive staff may want to consider employee hire date as a variable of interest. This would enable them to focus on staff that have been on board during key moments in the company's history. If executives would prefer for mentored staff to benefit from certain institutional knowledge, then it would be appropriate to target onboarding date ranges that reach as far back as possible. Conversely, if there are past events or processes that the company would prefer to leave behind, they may target retiring employees whose onboarding date is more recent. *It's important to acknowledge that some of these employees may have been with the company prior, but underwent a title change more recently.*
 
 ### Summary
 Two essential questions about the direction forward were posed at the beginning of the analysis. Note responses below.
 
-1. How many roles will need to be filled?
--The total number of roles is 90,398
--Create table that shows by dept_name as opposed to simply title
+1. **How many roles will need to be filled?**: The "Retiring_titles" data document exhibits a breakdown of retirements by role. The total number of roles to be filled is 90,398 - a large figure, indeed. An additional query completed for retirements by department may also be useful as executives determine their talent strategy moving forward. Note the image of this query below. <IMAGE OF COUNT OF RETIREES BY DEPT>
 
-Are there enough qualified, retirement-ready employees in the depts to mentor the next gen of PH employees?
--Depends on mentorship load; For more intensive roles, a lower mentor/mentee ratio would be best
--Currently, the comparison of retiring versus sustaining employees by role is:
---> Create table that shows ALL current employees by title (and dept if preferred) compared with anticipated retirements
+2. **Are there enough qualified, retirement-ready employees in the departmentss to mentor the next gen of PH employees?**: Note the comparison between retiring employees by title and current employees by title below.
+
+<IMAGE: RETIREE MENTORS BY TITLE, google sheet>
+<IMAGE: CURRENT EMPLOYEES BY TITLE, screenshot from pgAdmin>
+
+As you can see, there is a significant disparity between total current employees (most of whom will not be retiring) and eligible mentors. In all likelihood, there will not be enough qualified, retirement-ready employees (especially in the larger departments) to mentor the next generation of employees. Executive staff may want to look into external opportunities (i.e. through externships) as a means for creating the abundance of mentoring relationships that the company may need in the coming years. It may be best to prioritize 
 
 
 
