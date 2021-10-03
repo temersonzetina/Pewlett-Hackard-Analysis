@@ -1,5 +1,4 @@
----------------- CHALLENGE ----------------------
--- Create a new table that includes the titles of expected retirees.
+---------------- CHALLENGE: Deliverable 1 ----------------------
 SELECT e.emp_no, e.first_name, e.last_name, ti.title, ti.from_date, ti.to_date
 INTO retirement_titles
 FROM employees AS e
@@ -12,15 +11,54 @@ ORDER BY emp_no;
 SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
 	rt.first_name,
 	rt.last_name,
+	rt.to_date,
 	rt.title
 INTO retiree_titles
 FROM retirement_titles AS rt
 ORDER BY rt.emp_no, rt.to_date DESC;
 
--- Retrieve the number of employees by their most recent job title who are about to retire.
-SELECT COUNT(title), title
+SELECT * FROM retiree_titles
+
+-- Retrieve the number of employees who are about to retire by department name.
+SELECT COUNT(d.dept_name), d.dept_name
+INTO retiree_dept
+FROM dept_emp AS de
+INNER JOIN retiree_titles AS rt
+ON (de.emp_no = rt.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+GROUP BY d.dept_name;
+
+-- List of managers per department
+SELECT  dm.dept_no,
+        d.dept_name,
+        dm.emp_no,
+        ce.last_name,
+        ce.first_name,
+        dm.from_date,
+        dm.to_date
+INTO manager_info
+FROM dept_manager AS dm
+    INNER JOIN departments AS d
+        ON (dm.dept_no = d.dept_no)
+    INNER JOIN current_emp AS ce
+        ON (dm.emp_no = ce.emp_no);
+
+-- Retrieve the number of employees who are about to retire by title.
+SELECT COUNT(title),
 INTO retiring_titles
 FROM retiree_titles
+GROUP BY title
+ORDER BY COUNT DESC;
+
+SELECT * FROM retiring_titles
+
+SELECT * FROM dept_emp;
+
+-- Retrieve the total number of current employees by title.
+SELECT COUNT(emp_no), title
+FROM title
+WHERE (to_date = '9999-01-01')
 GROUP BY title
 ORDER BY COUNT DESC;
 
